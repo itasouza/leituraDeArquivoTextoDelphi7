@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Left = 293
+  Top = 317
+  Width = 486
+  Height = 283
+  Caption = 'Teste'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label7: TLabel
+    Left = 24
+    Top = 21
+    Width = 112
+    Height = 13
+    Caption = 'Caminho do Arquivo txt:'
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 423
+    Top = 39
+    Width = 29
+    Height = 22
+    Caption = '...'
+    OnClick = SpeedButton2Click
+  end
+  object Label1: TLabel
+    Left = 181
+    Top = 71
+    Width = 46
+    Height = 13
+    Caption = 'Naciona?'
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 72
+    Width = 27
+    Height = 13
+    Caption = 'NCM:'
+  end
+  object EdtArquivoOriginal: TEdit
+    Left = 24
+    Top = 40
+    Width = 393
+    Height = 21
+    TabOrder = 0
+    Text = 
+      'C:\Componentes - Sistemas Fontes\Teste Itamar - leitura delphi 7' +
+      '\IBPTax.csv'
+  end
+  object btnProcesso: TBitBtn
+    Left = 304
+    Top = 203
+    Width = 137
+    Height = 25
+    Caption = 'Processar...'
+    TabOrder = 1
+    OnClick = btnProcessoClick
+  end
+  object ListBox1: TListBox
+    Left = 24
+    Top = 96
+    Width = 409
+    Height = 97
+    ItemHeight = 13
+    TabOrder = 2
+  end
+  object editNcm: TEdit
+    Left = 55
+    Top = 69
+    Width = 115
+    Height = 21
+    TabOrder = 3
+  end
+  object ComboBox1: TComboBox
+    Left = 235
+    Top = 66
+    Width = 43
+    Height = 21
+    Style = csDropDownList
+    CharCase = ecUpperCase
+    ItemHeight = 13
+    ItemIndex = 0
+    TabOrder = 4
+    Text = 'S'
+    Items.Strings = (
+      'S'
+      'N')
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 448
+    Top = 72
+  end
+end
